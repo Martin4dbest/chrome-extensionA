@@ -23,6 +23,7 @@ def create_app():
     api.add_resource(VideoListResource, "/videos")
     api.add_resource(VideoToDisk, "/videos/upload")
     api.add_resource(TranscribeVideo, "/videos/<filename>/transcribe")
+    api.add_resource(VideoPlayBack, "/videos/<filename>")
 
     if not os.path.exists(app.config["UPLOAD_FOLDER"]):
         os.makedirs(app.config["UPLOAD_FOLDER"])
