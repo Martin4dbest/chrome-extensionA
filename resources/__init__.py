@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from resources.config import Config
 from dotenv import load_dotenv
 from flask_restful import Api
-from resources.handles import VideoListResource, VideoToDisk, TranscribeVideo
+from resources.handles import VideoListResource, VideoToDisk, TranscribeVideo, VideoPlayBack
 import os
 from flask_cors import CORS
 
